@@ -75,10 +75,130 @@
         <span style="font-size: 25px; color: #4961e1;">3,789.00</span>
       </div>
       <div class="right-content">
-          <span style="margin-right: 50px;"><button type="button" class="btn btn-primary"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-        Add Bills
-          </button></span>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              margin-right: 50px;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;">Add Bills
+          </button>
+          <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                              Add Bill
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body d-grid gap-4">
+                            <div class="d-flex justify-content-between">
+                              <div class="billtype">
+                                <label for="disabledSelect" class="form-label"
+                                  >Type</label
+                                >
+                                <select
+                                  id="disabledSelect"
+                                  class="form-select"
+                                  style="border-color: #9c27b0"
+                                >
+                                  <div class="d-flex">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <option>Internet</option>
+                                  </div>
+                                </select>
+                              </div>
+                              <div class="billdate">
+                                <label for="disabledSelect" class="form-label"
+                                  >Date</label
+                                >
+                                <select
+                                  id="disabledSelect"
+                                  class="form-select"
+                                  style="border-color: #9c27b0"
+                                >
+                                  <option>01 February 2024</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Shop/Company/Person</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="BSNL Communication"
+                                style="border-color: #9c27b0"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1"
+                                >Description</label
+                              >
+                              <textarea
+                                type="text"
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Internet,cable and landline"
+                                style="border-color: #9c27b0"
+                              ></textarea>
+                            </div>
+                            <div class="form-group">
+                              <label>Amount</label>
+                              <div class="d-flex">
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                  style="
+                                    width: 50px;
+                                    height: 40px;
+                                    border-radius: 4px;
+                                    background-color: #9c27b0;
+                                  "
+                                >
+                                  <i class="fa-solid fa-indian-rupee-sign"></i>
+                                </div>
+                                <input
+                                  style="
+                                    border-color: #9c27b0;
+                                    text-align: right;
+                                  "
+                                  type="text"
+                                  class="form-control w-50"
+                                  placeholder="590.00"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
       </div>
     </div>
     <!-- table-content section -->
@@ -156,5 +276,15 @@
       </table>
   </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
